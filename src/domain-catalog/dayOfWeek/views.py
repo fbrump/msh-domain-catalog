@@ -22,5 +22,8 @@ def getListData():
 
 class DaysOfWeekView(Resource):
 	def get(self, **kwargs):
-		#return getListData()
-		return { 'data': 'oi'}
+		return { 
+			'Return':  None, # getListData()
+			'Protocol': '',
+			'Message': 'Success'
+		}
