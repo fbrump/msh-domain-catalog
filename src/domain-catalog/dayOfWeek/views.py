@@ -1,6 +1,7 @@
 from flask import jsonify
 from flask_restful import Resource, fields, marshal_with
 from .models import DayOfWeek
+from .serializers import PersonModel
 import uuid
 
 LIST_DAYS_OF_WEEKS = [
@@ -12,6 +13,12 @@ LIST_DAYS_OF_WEEKS = [
 	{ 'code': 6, 'name':'Friday'},
 	{ 'code': 7, 'name':'Saturday'},
 ]
+
+class TestView(Resource):
+	def get(self, **kwargs):
+		person = PersonModel(name='Brum', age=17)
+		return person.toJson()
+		
 
 class DaysOfWeekView(Resource):
 	def get(self, **kwargs):
