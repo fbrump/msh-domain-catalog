@@ -1,3 +1,5 @@
+# domain-catalog/config.py
+
 print('config main')
 
 DEBUG = True # Turns on debugging features in Flask
