@@ -9,10 +9,11 @@ class BaseMessage(object):
 		super(BaseMessage, self).__init__()
 		self.statusCode = 200
 		self.setProtocol(protocol)
+		self.model = None
 	def getProtocol(self):
 		return self._protocol
 	def setProtocol(self, protocol):
-		self._protocol = protocol if protocol else str(uuid.uuid4())
+		self.protocol = protocol if protocol else str(uuid.uuid4())
 	def setModel(self, model):
 		self.model
 	def setStatusCode(self, code):
