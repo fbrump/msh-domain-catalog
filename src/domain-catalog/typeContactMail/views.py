@@ -10,9 +10,10 @@ resource_fields = {
 }
 
 LIST_TYPES_CONTACT_MAIL = [
+	TypeContactMail(code= '4', name='Other'),
 	TypeContactMail(code= '3', name='Personal'),
 	TypeContactMail(code= '2', name='Professional'),
-	TypeContactMail(code= '1', name='Mobile'),
+	TypeContactMail(code= '1', name='Academicy'),
 ]
 
 class TypeContactMailView(Resource):
