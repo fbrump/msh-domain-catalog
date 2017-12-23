@@ -1,8 +1,8 @@
-# domain-catalog/typeContactPhone/models.py
+# domain-catalog/typePhone/models.py
 
 import uuid
 
-class TypeContactPhone(object):
+class TypePhone(object):
 	"""
 		This class mapping Type Contact Phone model with your properties.
 
@@ -14,7 +14,7 @@ class TypeContactPhone(object):
 
 	"""
 	def __init__(self, code, description):
-		super(TypeContactPhone, self).__init__()
+		super(TypePhone, self).__init__()
 		self.code = code
 		self.description = description
 		self.status = True

@@ -1,0 +1,1 @@
+# domain-catalog/typePhone/__init__.py

@@ -18,7 +18,4 @@ LIST_TYPES_CONTACT_MAIL = [
 class TypeContactMailView(Resource):
 	@marshal_with(resource_fields)
 	def get(self, **kwargs):
-		#message = TypeContactMailSerializer()
-		#message.setModel(LIST_TYPES_CONTACT_MAIL)
-		#return message.getJson()
 		return LIST_TYPES_CONTACT_MAIL
