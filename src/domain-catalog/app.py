@@ -14,7 +14,7 @@ app.config.from_pyfile('config.py')
 
 api.add_resource(DaysOfWeekView, '/api/days-of-weeks/', endpoint = 'dayOfWeek')
 api.add_resource(DaysOfWeekItemView, '/api/days-of-weeks/<int:id>/', endpoint = 'dayOfWeekItem')
-api.add_resource(TypeContactMailView, '/api/type/contact-mail/', endpoint = 'typeContactMail')
+api.add_resource(TypeContactMailView, '/api/type/mail/', endpoint = 'typeContactMail')
 api.add_resource(TypePhoneView, '/api/type/phone/', endpoint = 'typePhone')
 
 if __name__ == '__main__':
