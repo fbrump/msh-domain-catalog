@@ -7,12 +7,15 @@ Domain Catalog
 Project when keep all apis for catalog of the systems:
 
 * Days of weeks
+
 `curl http://127.0.0.1:5050/api/days-of-weeks/ -X GET`
 
 * Type Mail
+
 `curl http://127.0.0.1:5050/api/type/mail/ -X GET`
 
 * Type Phone
+
 `curl http://127.0.0.1:5050/api/type/phone/ -X GET`
 
 Simple model develped on Python Flask, next tasks:
